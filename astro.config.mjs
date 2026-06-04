@@ -4,10 +4,9 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  // GitHub Pages project site. When a custom domain is added later,
-  // set `site` to it and drop `base` (or set base: '/').
-  site: 'https://tomrozendaal.github.io',
-  base: '/opvangwijs-web/',
+  // Served from the custom domain opvangwijs.nl (see public/CNAME).
+  site: 'https://opvangwijs.nl',
+  base: '/',
   vite: {
     plugins: [tailwindcss()],
   },
