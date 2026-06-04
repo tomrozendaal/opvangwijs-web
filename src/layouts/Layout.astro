@@ -1,0 +1,45 @@
+---
+import '../styles/global.css';
+import { withBase } from '../lib/url.ts';
+
+const title = 'Opvangwijs — rustige administratie voor gastouders';
+const description =
+  'Opvangwijs is een eenvoudige desktop-app voor gastouders. Beheer kinderen, kalender en inkomsten — lokaal op je eigen computer, in het Nederlands, eenmalig €5.';
+const ogImage = Astro.site
+  ? new URL(withBase('screenshots/kinderen.png'), Astro.site).href
+  : withBase('screenshots/kinderen.png');
+---
+
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href={withBase('favicon.svg')} />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="nl_NL" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

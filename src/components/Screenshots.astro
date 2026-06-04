@@ -1,0 +1,55 @@
+---
+import { withBase } from '../lib/url.ts';
+
+const shots = [
+  {
+    src: withBase('screenshots/kinderen.png'),
+    alt: 'Opvangwijs scherm Kinderen — overzicht van alle kinderen in de opvang',
+    title: 'Alle kinderen in één overzicht',
+    body:
+      'Beheer naam, leeftijd, dagen en contracten van elk kind. De gratis-eigen-kinderen tellen vanzelf mee in je ratio.',
+  },
+  {
+    src: withBase('screenshots/kalender.png'),
+    alt: 'Opvangwijs scherm Kalender — kinderen per dag van de week',
+    title: 'Per dag direct zien wie er is',
+    body:
+      'Een rustige weekkalender met je vaste kinderen, extra dagen en de aantallen per dag. Klik op een dag voor de details.',
+  },
+];
+---
+
+<section id="schermen" class="bg-muted/40 py-20 sm:py-24">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-semibold text-foreground sm:text-4xl">Wat je krijgt</h2>
+      <p class="mt-4 text-lg text-muted-foreground">
+        Twee schermen waar je dagelijks mee werkt — kinderen en kalender. Inkomsten en
+        vakantieplanning zitten er ook in.
+      </p>
+    </div>
+
+    <div class="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2">
+      {
+        shots.map((s) => (
+          <figure class="overflow-hidden rounded-lg border border-border bg-card shadow-sm">
+            <div class="border-b border-border bg-background">
+              <img
+                src={s.src}
+                alt={s.alt}
+                width="2000"
+                height="1100"
+                loading="lazy"
+                class="block h-auto w-full"
+              />
+            </div>
+            <figcaption class="px-6 py-5">
+              <h3 class="text-base font-semibold text-foreground">{s.title}</h3>
+              <p class="mt-1.5 text-sm text-muted-foreground">{s.body}</p>
+            </figcaption>
+          </figure>
+        ))
+      }
+    </div>
+  </div>
+</section>
