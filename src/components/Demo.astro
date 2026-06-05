@@ -1,0 +1,39 @@
+---
+import { withBase } from '../lib/url.ts';
+
+const videoSrc = withBase('walkthrough.webm');
+const poster = withBase('screenshots/kinderen.png');
+---
+
+<section id="demo" class="py-20 sm:py-24">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-semibold text-foreground sm:text-4xl">
+        Zie Opvangwijs in actie
+      </h2>
+      <p class="mt-4 text-lg text-muted-foreground">
+        Een korte rondleiding door de app — van je kinderen en de weekkalender tot
+        vakanties, inkomsten en back-ups.
+      </p>
+    </div>
+
+    <figure
+      class="mt-12 overflow-hidden rounded-xl border border-border bg-card shadow-md"
+    >
+      <video
+        class="block h-auto w-full"
+        src={videoSrc}
+        poster={poster}
+        width="1200"
+        height="800"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-label="Schermopname van Opvangwijs die door alle pagina's navigeert"
+      >
+      </video>
+    </figure>
+  </div>
+</section>
