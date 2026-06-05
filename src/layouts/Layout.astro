@@ -2,9 +2,15 @@
 import '../styles/global.css';
 import { withBase } from '../lib/url.ts';
 
-const title = 'Opvangwijs — rustige administratie voor gastouders';
-const description =
-  'Opvangwijs is een eenvoudige desktop-app voor gastouders. Beheer kinderen, kalender en inkomsten — lokaal op je eigen computer, in het Nederlands, eenmalig €5.';
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Opvangwijs — rustige administratie voor gastouders',
+  description = 'Opvangwijs is een eenvoudige desktop-app voor gastouders. Beheer kinderen, kalender en inkomsten — lokaal op je eigen computer, in het Nederlands, eenmalig €5.',
+} = Astro.props;
 const ogImage = Astro.site
   ? new URL(withBase('screenshots/kinderen.png'), Astro.site).href
   : withBase('screenshots/kinderen.png');

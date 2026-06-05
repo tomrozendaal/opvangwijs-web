@@ -1,0 +1,101 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+import { CONTACT_EMAIL, PRICE_LABEL } from '../lib/config.ts';
+import { withBase } from '../lib/url.ts';
+---
+
+<LegalLayout
+  title="Voorwaarden"
+  description="De gebruiksvoorwaarden voor de desktop-app Opvangwijs: licentie, betaling, herroepingsrecht en aansprakelijkheid."
+  updated="5 juni 2026"
+>
+  <p>
+    Deze voorwaarden gelden voor het gebruik van de desktop-app Opvangwijs en de website
+    opvangwijs.nl. Door Opvangwijs te kopen en te gebruiken ga je akkoord met deze voorwaarden.
+  </p>
+
+  <h2>Wat je koopt</h2>
+  <p>
+    Opvangwijs is een eenvoudige desktop-app voor gastouders, waarmee je kinderen, kalender en
+    inkomsten beheert. Je betaalt eenmalig {PRICE_LABEL} en krijgt daarmee het recht om de app op je
+    eigen computer(s) te installeren en te gebruiken. Er is geen abonnement en er zijn geen
+    terugkerende kosten. De app werkt op macOS en Windows.
+  </p>
+
+  <h2>Betaling en verkoper</h2>
+  <p>
+    De aankoop en betaling verlopen via <a href="https://www.lemonsqueezy.com" rel="noopener"
+      >Lemon Squeezy</a
+    >, die hierbij optreedt als verkoper (merchant of record). Dit betekent dat je
+    koopovereenkomst voor de betaling met Lemon Squeezy tot stand komt en dat zij je factuur
+    verzorgen en eventuele belastingen afdragen. De voorwaarden van Lemon Squeezy zijn op die
+    transactie van toepassing.
+  </p>
+
+  <h2>Licentie</h2>
+  <p>
+    Je krijgt een persoonlijke, niet-overdraagbare licentie om Opvangwijs te gebruiken voor je eigen
+    gastouderwerk. Je mag de app niet doorverkopen, verhuren, kopiëren voor verspreiding, of
+    proberen na te maken of te herontwikkelen. Alle rechten op de software, de naam en het ontwerp
+    blijven bij Opvangwijs.
+  </p>
+
+  <h2>Updates</h2>
+  <p>
+    Nieuwe versies van Opvangwijs worden beschikbaar gesteld via deze website. Je bestaande gegevens
+    blijven behouden bij het updaten. We doen ons best om de app te onderhouden, maar kunnen niet
+    garanderen dat er altijd updates verschijnen of dat de app op toekomstige versies van macOS of
+    Windows blijft werken.
+  </p>
+
+  <h2>Jouw gegevens en back-ups</h2>
+  <p>
+    Al je gegevens worden lokaal op je eigen computer opgeslagen; wij hebben er geen toegang toe.
+    Zie ook onze <a href={withBase('privacy')}>privacyverklaring</a>. Je bent zelf verantwoordelijk voor het
+    maken van reservekopieën via "Back-up exporteren" en voor het veilig bewaren daarvan. Wij kunnen
+    verloren of beschadigde gegevens niet voor je herstellen.
+  </p>
+
+  <h2>Herroepingsrecht</h2>
+  <p>
+    Opvangwijs is een digitaal product dat direct na aankoop te downloaden is. Bij digitale producten
+    geldt normaal gesproken een wettelijk herroepingsrecht van 14 dagen. Omdat de levering (de
+    download) direct begint, ga je er bij aankoop mee akkoord dat de uitvoering onmiddellijk start en
+    doe je daarmee afstand van je herroepingsrecht zodra de download is gestart.
+  </p>
+  <p>
+    Werkt de app niet zoals beschreven of loop je tegen een probleem aan? Neem dan contact met ons op
+    via <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> — we denken graag met je mee. Verzoeken
+    om terugbetaling lopen via Lemon Squeezy.
+  </p>
+
+  <h2>Aansprakelijkheid</h2>
+  <p>
+    Opvangwijs wordt geleverd "zoals het is". We bouwen de app met zorg, maar kunnen niet garanderen
+    dat hij volledig foutloos of zonder onderbrekingen werkt. Opvangwijs is een hulpmiddel voor je
+    administratie en geen vervanging van professioneel boekhoudkundig of fiscaal advies; je blijft
+    zelf verantwoordelijk voor de juistheid van je administratie en je belastingaangifte.
+  </p>
+  <p>
+    Voor zover wettelijk toegestaan zijn wij niet aansprakelijk voor schade die voortvloeit uit het
+    gebruik van de app, waaronder verlies van gegevens. Onze eventuele aansprakelijkheid is in alle
+    gevallen beperkt tot het bedrag dat je voor de app hebt betaald.
+  </p>
+
+  <h2>Toepasselijk recht</h2>
+  <p>
+    Op deze voorwaarden is Nederlands recht van toepassing.
+  </p>
+
+  <h2>Wijzigingen</h2>
+  <p>
+    We kunnen deze voorwaarden van tijd tot tijd aanpassen. De meest actuele versie staat altijd op
+    deze pagina, met bovenaan de datum van de laatste wijziging.
+  </p>
+
+  <h2>Vragen?</h2>
+  <p>
+    Heb je een vraag over deze voorwaarden? Mail ons op
+    <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+  </p>
+</LegalLayout>

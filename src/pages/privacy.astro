@@ -1,0 +1,79 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+import { CONTACT_EMAIL } from '../lib/config.ts';
+---
+
+<LegalLayout
+  title="Privacyverklaring"
+  description="Opvangwijs verzamelt geen persoonsgegevens. Al je gegevens blijven lokaal op je eigen computer staan."
+  updated="5 juni 2026"
+>
+  <p>
+    Opvangwijs is bewust gemaakt zónder cloud en zónder account. We hechten veel waarde aan je
+    privacy en die van de gezinnen waarmee je werkt. Het uitgangspunt is simpel:
+    <strong>wij verzamelen en bewaren geen persoonsgegevens van jou of de kinderen die je opvangt.</strong>
+  </p>
+
+  <h2>Jouw gegevens blijven op je eigen computer</h2>
+  <p>
+    Alle gegevens die je in Opvangwijs invoert — kinderen, ouders, kalender, inkomsten en alles wat
+    daarbij hoort — worden opgeslagen in één bestand op je eigen computer. Die gegevens worden niet
+    naar ons of naar een server verstuurd. Er is geen account, geen synchronisatie en na de download
+    geen internetverbinding nodig om de app te gebruiken.
+  </p>
+  <p>
+    Dat betekent ook dat <strong>jij</strong> verantwoordelijk bent voor het beheer en de
+    beveiliging van dat bestand: bijvoorbeeld door je computer met een wachtwoord te beveiligen en
+    via "Back-up exporteren" een veilige reservekopie te maken. Wij hebben geen toegang tot je
+    gegevens en kunnen een verloren bestand niet voor je herstellen.
+  </p>
+
+  <h2>De website verzamelt niets</h2>
+  <p>
+    Deze website (opvangwijs.nl) gebruikt geen cookies, geen trackers en geen analyse-software.
+    We houden geen bezoekersstatistieken bij en plaatsen niets op je apparaat. Daarom is er ook
+    geen cookiebanner nodig.
+  </p>
+
+  <h2>Betalingen via Lemon Squeezy</h2>
+  <p>
+    De aankoop van Opvangwijs verloopt via <a href="https://www.lemonsqueezy.com" rel="noopener"
+      >Lemon Squeezy</a
+    >, die als verkoper (merchant of record) optreedt. Bij het afrekenen verwerkt Lemon Squeezy de
+    gegevens die nodig zijn om je betaling af te handelen en je factuur te maken, zoals je naam,
+    e-mailadres en betaalgegevens. Wij ontvangen alleen beperkte ordergegevens om je aankoop te
+    kunnen ondersteunen; volledige betaalgegevens (zoals je creditcardnummer) zien wij nooit.
+  </p>
+  <p>
+    Op deze verwerking is de privacyverklaring van Lemon Squeezy van toepassing. Lees die op
+    <a href="https://www.lemonsqueezy.com/privacy" rel="noopener">lemonsqueezy.com/privacy</a>.
+  </p>
+
+  <h2>E-mailcontact</h2>
+  <p>
+    Als je ons mailt op <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, bewaren we je
+    bericht en e-mailadres zolang dat nodig is om je vraag te beantwoorden. We gebruiken je
+    e-mailadres niet voor nieuwsbrieven of andere doeleinden zonder dat je daar zelf om vraagt.
+  </p>
+
+  <h2>Jouw rechten</h2>
+  <p>
+    Omdat wij zelf geen persoonsgegevens van je bewaren (afgezien van eventueel e-mailcontact), is
+    er voor ons weinig te verstrekken of te verwijderen. Heb je toch een vraag over je gegevens, of
+    wil je dat we e-mailcontact verwijderen? Mail ons gerust op
+    <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Voor gegevens die Lemon Squeezy
+    verwerkt, kun je terecht bij Lemon Squeezy.
+  </p>
+
+  <h2>Wijzigingen</h2>
+  <p>
+    We kunnen deze privacyverklaring aanpassen wanneer de app of de website verandert. De meest
+    actuele versie staat altijd op deze pagina, met bovenaan de datum van de laatste wijziging.
+  </p>
+
+  <h2>Vragen?</h2>
+  <p>
+    Heb je een vraag over je privacy of deze verklaring? Mail ons op
+    <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+  </p>
+</LegalLayout>
