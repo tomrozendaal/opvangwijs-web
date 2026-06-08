@@ -5,11 +5,13 @@ import { withBase } from '../lib/url.ts';
 interface Props {
   title?: string;
   description?: string;
+  noindex?: boolean;
 }
 
 const {
   title = 'Opvangwijs — eenvoudige administratie voor gastouders',
   description = 'Opvangwijs is een eenvoudige desktop-app voor gastouders. Beheer kinderen, kalender en inkomsten — lokaal op je eigen computer, in het Nederlands, eenmalig €9,99.',
+  noindex = false,
 } = Astro.props;
 const ogImage = Astro.site
   ? new URL(withBase('screenshots/kinderen.png'), Astro.site).href
@@ -26,6 +28,7 @@ const ogImage = Astro.site
 
     <title>{title}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />

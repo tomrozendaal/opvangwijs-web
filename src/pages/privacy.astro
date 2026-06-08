@@ -6,7 +6,7 @@ import { CONTACT_EMAIL } from '../lib/config.ts';
 <LegalLayout
   title="Privacyverklaring"
   description="Opvangwijs verzamelt geen persoonsgegevens. Al je gegevens blijven lokaal op je eigen computer staan."
-  updated="5 juni 2026"
+  updated="8 juni 2026"
 >
   <p>
     Opvangwijs is bewust gemaakt zónder cloud en zónder account. We hechten veel waarde aan je
@@ -35,18 +35,19 @@ import { CONTACT_EMAIL } from '../lib/config.ts';
     geen cookiebanner nodig.
   </p>
 
-  <h2>Betalingen via Lemon Squeezy</h2>
+  <h2>Betalingen via Mollie</h2>
   <p>
-    De aankoop van Opvangwijs verloopt via <a href="https://www.lemonsqueezy.com" rel="noopener"
-      >Lemon Squeezy</a
-    >, die als verkoper (merchant of record) optreedt. Bij het afrekenen verwerkt Lemon Squeezy de
-    gegevens die nodig zijn om je betaling af te handelen en je factuur te maken, zoals je naam,
-    e-mailadres en betaalgegevens. Wij ontvangen alleen beperkte ordergegevens om je aankoop te
-    kunnen ondersteunen; volledige betaalgegevens (zoals je creditcardnummer) zien wij nooit.
+    De betaling voor Opvangwijs wordt afgehandeld door betaaldienstverlener <a
+      href="https://www.mollie.com"
+      rel="noopener">Mollie</a
+    >. Bij het afrekenen verwerkt Mollie de gegevens die nodig zijn om je betaling uit te voeren,
+    zoals je betaalgegevens en het betaalde bedrag. Wij ontvangen van Mollie alleen de gegevens die
+    we nodig hebben om je aankoop te verwerken en te ondersteunen; volledige betaalgegevens (zoals
+    je rekening- of creditcardnummer) zien wij nooit.
   </p>
   <p>
-    Op deze verwerking is de privacyverklaring van Lemon Squeezy van toepassing. Lees die op
-    <a href="https://www.lemonsqueezy.com/privacy" rel="noopener">lemonsqueezy.com/privacy</a>.
+    Op deze verwerking is de privacyverklaring van Mollie van toepassing. Lees die op
+    <a href="https://www.mollie.com/nl/privacy" rel="noopener">mollie.com/privacy</a>.
   </p>
 
   <h2>E-mailcontact</h2>
@@ -61,8 +62,8 @@ import { CONTACT_EMAIL } from '../lib/config.ts';
     Omdat wij zelf geen persoonsgegevens van je bewaren (afgezien van eventueel e-mailcontact), is
     er voor ons weinig te verstrekken of te verwijderen. Heb je toch een vraag over je gegevens, of
     wil je dat we e-mailcontact verwijderen? Mail ons gerust op
-    <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Voor gegevens die Lemon Squeezy
-    verwerkt, kun je terecht bij Lemon Squeezy.
+    <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Voor gegevens die Mollie
+    verwerkt, kun je terecht bij Mollie.
   </p>
 
   <h2>Wijzigingen</h2>
