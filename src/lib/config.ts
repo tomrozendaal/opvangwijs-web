@@ -8,5 +8,10 @@ export const CONTACT_EMAIL = 'hallo@opvangwijs.nl';
 export const PRICE_LABEL = '€9,99';
 
 // Download links shown on the /bedankt page after a successful payment.
-export const DOWNLOAD_MACOS = 'https://opvangwijs.nl/REPLACE-ME-Opvangwijs.dmg';
-export const DOWNLOAD_WINDOWS = 'https://opvangwijs.nl/REPLACE-ME-Opvangwijs-Setup.exe';
+// These point at the public opvangwijs-releases repo using GitHub's stable
+// "latest release" URLs, so they always serve the newest installer and never
+// need updating per version (the release workflow uploads constant filenames).
+export const DOWNLOAD_MACOS =
+  'https://github.com/tomrozendaal/opvangwijs-releases/releases/latest/download/Opvangwijs-universal.dmg';
+export const DOWNLOAD_WINDOWS =
+  'https://github.com/tomrozendaal/opvangwijs-releases/releases/latest/download/Opvangwijs-Setup.exe';
